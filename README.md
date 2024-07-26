@@ -4,7 +4,7 @@
 - 👯 I’m looking to collaborate on nothing at the moment.
 - 🤔 I’m looking for help with nothing at the moment.
 - 💬 Ask me about cats or kids.
-- 📫 How to reach me: amanda.aumann@gmail.com
+- 📫 How to reach me: mandi628.codes@gmail.com
 - 😄 Pronouns: she/her
 - ⚡ Fun fact: I make lace.
 <!--
