@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="fcc_survey-form.css"
+    <!-- The link is here for the stylesheet, but not stylesheet instructions were given in the assignment. I will add one, if I have time, at a later date. -->
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thanks for taking the time to help us improve the platform.</p>
+    <form id="survey-form">
+      <label id="name-label">Name </label>
+      <input id="name" type="text" placeholder="Please enter your name." required />
+      <label id="email-label">Email </label>
+      <input id="email" type="email" placeholder="Please enter your email." required />
+      <label id="number-label">Age (optional) </label>
+      <input id="number" type="number" placeholder="You must be over 13 years old." min=13 max=120 />
+      <label id="role">Which option best describes your current role? </label>
+      <select id="dropdown" type="dropdown">
+        <option>(select one)</option>
+        <option>Current student</option>
+        <option>Adult student</option>
+        <option>Retired student</option>
+      </select>
+      <label id="recommendation">Would your recommend freeCodeCamp to a friend? </label>
+      <label><input type="radio" name="recommend" value="definitely"> Definitely</label>
+      <label><input type="radio" name="recommend" value="maybe"> Maybe</label>
+      <label><input type="radio" name="recommend" value="never"> Never</label>
+      <label id="improvements">What would you like us to improve? (Check all that apply)</label>
+      <label><input type="checkbox" value="videos"> Videos</label>
+      <label><input type="checkbox" value="instructions"> Instructions</label>
+      <label><input type="checkbox" value="help-files"> Help files</label>
+    <label id="comments">Please add additional comments here: <textarea placeholder="Additional comments."></textarea>
+    <button type="submit" id="submit">Submit</button>
+    </form>
+  </body
+</html>
