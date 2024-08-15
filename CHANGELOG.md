@@ -8,10 +8,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Added
 
-- 
+- create HTML page for City Skyline project
+- create HTML page for Technical Documentation project
 
 ### Changed
 
+- create original style template for my personal pages
+- create text and update index.html
+
 ### Removed
 
-## [M.m.p] - YYYY-MM-DD
+## [1.0.0] - 2024.08.15
+
+### Added
+
+- [freeCodeCamp](freecodecamp/fcc-index.html) index page
+
+### Changed
+
+- Renamed "style.css" to "bluestyle.css"
