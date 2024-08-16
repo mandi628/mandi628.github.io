@@ -44,7 +44,6 @@ Headings font: Georgia, serif; */
 
 #navbar a {
   text-decoration: none;
-  color: var(--white-smoke);
   font-weight: bold;
   padding: 5px;
 }
