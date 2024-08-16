@@ -69,6 +69,7 @@ Headings font: Georgia, serif; */
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 3.5rem;
   color: var(--white-smoke);
+  background-color: var(--cambridge-blue);
 }
 
 #subtitle {
