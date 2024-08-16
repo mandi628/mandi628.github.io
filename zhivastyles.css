@@ -28,6 +28,7 @@ Headings font: Georgia, serif; */
 
 #navbar {
   background-color: var(--cambridge-blue);
+  color: var(--cornell-red);
   margin: 0;
   padding: 0;
   position: sticky;
@@ -46,6 +47,7 @@ Headings font: Georgia, serif; */
   text-decoration: none;
   font-weight: bold;
   padding: 5px;
+  color: var(--cornell-red);
 }
 
 #navbar a:hover {
