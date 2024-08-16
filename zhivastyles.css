@@ -57,7 +57,7 @@ Headings font: Georgia, serif; */
 
 #welcome-section {
   height: 100vh;
-  background-color: var(--cambridge-blue);;
+  background-color: var(--cambridge-blue);
   margin: 0;
   display: flex;
   justify-content: center;
