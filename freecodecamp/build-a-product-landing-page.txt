@@ -1,0 +1,106 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <img src="https://www.upstatesuzukiacademy.com/wp-content/uploads/2018/11/cropped-Logo1-4.jpg" id="header-img" />
+      <nav id="nav-bar">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#order" class="nav-link">Order</a>
+      </nav>
+    </header>
+    <section id="about">
+      <header class="header">About Us</header>
+      <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/KLu8rURidr8?si=j6FDAlTOCjKLegfp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="video"></iframe>
+    </div>
+    </section>
+    <section id="contact">
+      <header class="header">Contact Us</header>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input name="email" id="email" type="email" placeholder="Enter your email address" required />
+        <input type="submit" id="submit">
+      </form>
+    </section>
+    <section id="order">
+      <header class="header">Order</header>
+      <p>This is how you can place an order.</p>
+    </section>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  font-size: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+#header-img {
+  width: 100px;
+  height: auto;
+}
+
+#nav-bar {
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Verdana, sans;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  background-color: magenta;
+  padding: 5px;
+}
+
+@media (max-width: 760px) {
+  #nav-bar {
+    font-size: .9rem;
+  }
+}
+
+.header {
+  font-family: Verdana, sans-serif;
+  font-size: 1.75rem;
+  padding: 5px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}
+
+** end of undefined **
+

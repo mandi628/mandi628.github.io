@@ -1,43 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>mandi628 - Portfolio</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylsheet" href="bluestyle.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylsheet" href="zhivastyle.css" />
+  <script src="https://kit.fontawesome.com/6823dcc53a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-
-  <h1>Portfolio</h1>
-  
-  <p>Welcome to my portfolio. Feel free to look around and explore all I have to offer.</p>
-  
-  <h2>HTML/CSS Samples</h2>
+  <nav id="navar">
     <ul>
-      <li>freeCodeCamp Projects</li>
-      <ul>
-        <li>Build a Survey</li>
-        <li>Build a Tribute Page</li>
-        <li><a href="freecodecamp/build-a-balance-sheet.html">Build a Balance Sheet</a></li>
-      </ul>
-      <li>The Odin Project Challenges</li>
-      <ul>
-        <li><a href="odin-project/landing-page.html">Landing Page</a></li>
-      </ul>
-      <li>Other Projects</li>
-      <ul>
-        <li>Family Recipes</li>
-      </ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="projects">Projects</a></li>
+      <li><a href="contact">Contact</a></li>
     </ul>
+  </nav>
 
-  <h2>Python Samples</h2>
-    <ul>
-      <li>Numerology Calculation App (original)</li>
+  <section id="wecome-section">
+    <div>
+      <h1 id="welcome">This is Mandi</h1>
+      <p id="subtitle">Re-invented as a web developer</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h1 class="header">Projects</h1>
+<!-- Landing Page Project -->
+    <div id="project-catalog">
+      <div class="project-tile">
+        <img alt="Landing Page" height="150px" width="150px" />
+        <a href="/pages/product-landing-page.html">Product Landing Page</a>
+      </div>
+<!-- Technical Documentation Page Project -->
+      <div class="project-tile">
+        <img alt="Technical Documentation" height="150px" width="150px" />
+        <a href="/pages/technical-documentation.html">Technical Documentation</a>
+      </div>
+<!-- Tribute Page Project -->
+      <div class="project-tile">
+        <img alt="Tribute Page" height="150px" width="150px" />
+        <a href="/pages/tribute-page.html">Tribute Page</a>
+      </div>
+<!-- Landing Page #2 (Odin Project) -->
+      <div class="project-tile">
+        <img alt="Landing Page #2" height="150px" width="150px" />
+        <a href="/pages/tribute-page.html">Product Landing Page #2</a>
+      </div>
+<!-- Python Numerology Calculator -->
+      <div class="project-tile">
+        <img alt="Numerology Calculator" height="150px" width="150px" />
+        <a href="">Python Numerology Calculator</a>
+      </div>
+<!-- Survey Form -->
+      <div class="project-tile">
+        <img alt="Survey Form" height="150px" width="150px" />
+        <a href="">Survey Form</a>
+      </div>
+<!-- Balance Sheet -->
+      <div class="project-tile">
+        <img alt="Balance Sheet" height="150px" width="150px" />
+        <a href="">Balance Sheet</a>
+      </div>
+<!-- Family Recipes Website -->
+      <div class="project-tile">
+        <img alt="Family Recipes" height="150px" width="150px" />
+        <a href="">Family Recipes Website</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h1 class="header">About</h1>
+    <div class="text">
+      <p>
+        After years as a stay-at-home mom, raising four kids, Mandi went to work as a freelance musician and teacher. Always passionate and curious about computers, when her youngest graduated from high school, Mandi set about learning the craft of web and software development.
+      </p>
+      <p>
+        She is now a freelance web developer and programmer, and enjoys the freedom of location this type of work offers. In her spare time, Mandi continues to teach private music lessons, performs in various venues in the Southeast, and spins her own wool for knitting, crocheting, felting, weaving, and more.
+      </p>
+      <p id="last">Click any of the links below to find out more or contact Mandi! Let's work together soon!</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <ul id="profiles">
+      <li><a href="https://www.freecodecamp.org/mandi628" id="profile-link" target="_blank">
+        <i class="fa-brands fa-free-code-camp"></i> freeCodeCamp</a></li>
+      <li><a href="https://www.github.com/mandi628" target="_blank">
+        <i class="fa-brands fa-github"></i> GitHub</a></li>
+      <li><a href="mailto:mandi628.codes@gmail.com">
+        <i class="fa-regular fa-envelope"></i> E-mail</a></li>
     </ul>
-
-  <h2>JavaScript Samples</h2>
-
-  <h2>Fullstack Samples</h2>
-
+  <section>
 </body>
 </html>

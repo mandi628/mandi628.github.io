@@ -1,0 +1,213 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mandi628 Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://kit.fontawesome.com/6823dcc53a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </nav>
+    <section id="welcome-section">
+      <div><h1 id="welcome">This is Mandi</h1>
+      <p id="subtitle">Re-invented as a web developer</p>
+      </div>
+    </section>
+    <section id="projects">
+      <h1 class="header">Projects</h1>
+      <div id="project-catalog">
+        <div class="project-tile">
+          <img alt="Landing Page" height="150px" width="150px" />
+          <a href="/pages/product-landing-page.html">Product Landing Page</a>
+        </div>
+        <div class="project-tile">
+          <img alt="Technical Documentation" height="150px" width="150px" />
+          <a href="/pages/technical-documentation.html">Technical Documentation</a>
+        </div>
+        <div class="project-tile">
+          <img alt="Tribute Page" height="150px" width="150px" />
+          <a href="/pages/tribute-page.html">Tribute Page</a>
+        </div>
+        <div class="project-tile">
+          <img alt="Landing Page #2" height="150px" width="150px" />
+          <a href="">Product Landing Page #2</a>
+        </div>
+        <div class="project-tile">
+          <img alt="Numerology Calculator" height="150px" width="150px" />
+          <a href="">Python Numerology Calculator</a>
+        </div>
+        <div class="project-tile">
+          <img alt="Survey Form" height="150px" width="150px" />
+          <a href="">Survey Form</a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h1 class="header">About</h1>
+      <div class="text">
+        <p>After years as a stay-at-home mom, raising four kids, Mandi went to work as a freelance musician and teacher. Always passionate and curious about computers, when her youngest graduated from high school, Mandi set about learning the craft of web and software development.</p>
+        <p>She is now a freelance web developer and programmer, and enjoys the freedom of location this type of work affords her. In her spare time, Mandi continues to teach private music lessons, performs in various venues in the Southeast, and spins her own wool for knitting, crocheting, felting, weaving, and more.</p>
+        <p id="last">Click any of the links below to find out more or contact Mandi! Let's work together soon!</p>
+      </div>
+    </section>
+    <section id="contact">
+      <ul id="profiles">
+        <li><a href="https://www.freecodecamp.org/mandi628" id="profile-link" target="_blank"><i class="fa-brands fa-free-code-camp"></i> freeCodeCamp</a></li>
+        <li><a href="https://www.github.com/mandi628"><i class="fa-brands fa-github"></i> GitHub</a></li>
+        <li><a href="mailto:mandi628.codes@gmail.com"><i class="fa-regular fa-envelope"></i> E-mail</a></li>
+      </ul>
+    </section>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 760px) {
+  #navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#navbar {
+  background-color: orangered;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
+}
+
+#navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  font-size: 1.4rem;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: brown;
+  font-weight: bold;
+  padding: 5px;
+}
+
+#navbar a:hover {
+  background-color: brown;
+  color: orangered;
+}
+
+#welcome-section {
+  height: 100vh;
+  background-color: brown;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome {
+  text-align: center;
+  font-family: Times New Roman, Times, serif;
+  font-size: 3.5rem;
+  color: orangered;
+}
+
+#subtitle {
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: bold;
+  color: orange;
+}
+
+.header {
+  text-align: center;
+  font-family: Times New Roman, Times, serif;
+  font-size: 1.7rem;
+  margin: 20px;
+}
+
+#project-catalog {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.project-title a {
+  padding-top: 10px;
+}
+
+#about {
+  width: 80%;
+  justify-content: center;
+  margin: auto;
+}
+
+#about p {
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  text-indent: 50px;
+  padding-top: 25px;
+}
+
+#about p#last {
+  padding-bottom: 25px;
+}
+
+#contact {
+  background-color: brown;
+}
+
+#contact ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 40px;
+  font-size: 1.4rem;
+}
+
+#contact a {
+  text-decoration: none;
+  color: orangered;
+  font-weight: bold;
+  padding: 5px;
+}
+
+#contact a:hover {
+  background-color: orangered;
+  color: brown;
+}
+
+i {
+  font-size: 1.6rem;
+}
+
+** end of undefined **
+
