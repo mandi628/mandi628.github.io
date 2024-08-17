@@ -1,0 +1,106 @@
+:root {
+  --white-smoke: #f1edee;
+  --cambridge-blue: #69a197;
+  --russian-violet: #241e4e;
+  --cornell-red: #bf211e;
+  --lime: #cbff3d;
+}
+  
+/* Main font: Verdana, sans-serif; (font-size: 16px)
+Headings font: Georgia, serif; */
+  
+* {
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--white-smoke);
+  color: var(--russian-violet);
+}
+
+.nav-list {
+    list-style-type: none;
+}
+  
+#navbar {
+  position: fixed;
+  min-width: 190px;
+  top: 70px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+}
+  
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar a:hover {
+    background-color: var(--russian-violet);
+    color: var(--lime);
+}
+
+div.header {
+  height: 70px;
+  background-color: var(--cambridge-blue);
+  align-content: center;
+  padding-left: 20px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    background-color: var(--cambridge-blue);
+}
+  
+#main-doc {
+  position: absolute;
+  margin-left: 200px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+  
+.main-section header {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 20px 0 10px 0;
+}
+
+p {
+  text-indent: 40px;
+}
+  
+code {
+  background-color: var(--cambridge-blue);
+  color: var(--russian-violet);
+  padding: 5px;
+  margin: 5px;
+}
+
+.main-section ul {
+  position: relative;
+  left: 80px;
+  padding-top: 20px;
+}
+  
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+    width: 150px;
+    height: 205px;
+  }
+}
+
+footer {
+    border: 1px solid black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    border: 1px solid black;
+}

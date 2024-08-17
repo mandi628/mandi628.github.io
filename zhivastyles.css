@@ -40,10 +40,10 @@ Headings font: Georgia, serif; */
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
-  font-size: 1.4rem;
 }
 
 #navbar a {
+  font-size: 1.4rem;
   text-decoration: none;
   font-weight: bold;
   padding: 5px;
@@ -145,11 +145,11 @@ Headings font: Georgia, serif; */
   align-items: center;
   padding: 20px;
   padding-bottom: 40px;
-  font-size: 1.8rem;
   background-color: var(--russian-violet);
 }
 
 #contact a {
+  font-size: 1.4rem;
   text-decoration: none;
   color: var(--lime);
   font-weight: bold;
@@ -164,6 +164,7 @@ Headings font: Georgia, serif; */
 
 i {
   background-color: var(--russian-violet);
+  font-size: 1.4rem;
 }
 
 .footer {
