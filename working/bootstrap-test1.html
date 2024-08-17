@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bootstrap Test 1</title>
+        <!--This sample is using Bootstrap 3-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>My First Bootstrap Page</h1>
+            <p>This is some text. It uses a responsive fixed-width container.</p>
+        </div>
+
+        <div class="container-fluid">
+            <h1>My Second Bootstrap Page</h1>
+            <p>This div uses a fluid full-width container.</p>
+        </div>
+
+        <div class="container">
+            <h1>Default Settings in Typography</h1>
+            <p>"Bootstrap has automatic heading stylings for the fonts and headings. The global default font-size is 14px, with a line-height of 1.428. This is automatically applied to the <code>&lt;body&gt;</code> and paragraph (<code>&lt;p&gt;</code>) elements. All paragraph elements also have a bottom margin equaling half their computed line-height.</p>
+            <h2>Headings</h2>
+                <h1>Heading 1 = 36px <small>secondary text</small></h1>
+                <h2>Heading 2 = 30px <small>secondary text</small></h2>
+                <h3>Heading 3 = 24px <small>secondary text</small></h3>
+                <h4>Heading 4 = 18px <small>secondary text</small></h4>
+                <h5>Heading 5 = 14px <small>secondary text</small></h5>
+                <h6>Heading 6 = 12px <small>secondary text</small></h6>
+                <p>Each heading also has a <code>&lt;small&gt;</code> version for secondary text.</p>
+            <h2>Other Markings</h2>
+                <p>The <code>&lt;mark&gt;</code> element looks <mark>like this</mark>.</p>
+                <p>The <code>&lt;abbr&gt;</code> element renders <abbr title="like this">like this</abbr>.</p>
+                <blockquote>
+                    <p>A block quote displays a gray bar on the left, with smaller font display for the credit line.</p>
+                    <footer>w3schools website</footer>
+                </blockquote>
+                <blockquote class="blockquote-reverse">
+                    <p>You can also display the blockquote on the right with the <code>.blockquote-reverse</code> class, inside the <code>&lt;blockquote&gt;</code> element.</p>
+                    <footer>w3schools website</footer>
+                </blockquote>
+                <dl>
+                    <dt>Display List</dt>
+                    <dd>displays like this</dd>
+                    <dt>Instead of</dt>
+                    <dd>default versions</dd>
+                </dl>
+                <p>I've already demonstrated the <code>&lt;code&gt;</code> element. And the <code>&lt;kbd&gt;</code> element displays <kbd>like this</kbd>.</p>
+                <p>For multiple lines of code, you can use the <code>&lt;pre&gt;</code> element:</p>
+                <pre>
+                Text in a pre element
+                is displayed in a fixed-width
+                font, and it preserves
+                both      spaces and
+                line breaks.
+                </pre>
+            <h2>Built-In Color Settings</h2>
+                <p>By using classes, you can create color coding in the text.</p>
+                <p class="text-muted">The class is put in the paragraph element. This is muted.</p>
+                <p class="text-primary">This is the important setting.</p>
+                <p class="text-success">The green is for success...</p>
+                <p class="text-info">Informational text is blue.</p>
+                <p class="text-warning">Warning text is this crazy color.</p>
+                <p class="text-danger">Really serious now, with a warning class.</p>
+                <p>Each color category has a background version, as well.</p>
+                <p class="bg-primary">Important background.</p>
+                <p class="bg-success">Success background.</p>
+                <p class="bg-info">Information background.</p>
+                <p class="bg-warning">Warning background.</p>
+                <p class="bg-danger">Danger background.</p>
+                <p>Other classes for paragraph styling are available. w3schools has a <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_css_text.asp">Bootstrap Typography Reference</a> available.</p>
+        </div>
+        <div class="container">
+            <h1>Bootstrap Tables</h1>
+                <h2>Basic Table</h2>
+                <p>By adding the <code>.table</code> class to the <code>&lt;table&gt;</code> element, you'll get the following basic styling.</p>
+                <table class="table">
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </table>
+                <p>The same table, styled by adding the <code>.table-striped</code> class, adds zebra-stripes.</p>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </table>
+                <p>The <code>.table-bordered</code> class, in place of stripes, adds borders to the same table.</p>
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </table>
+                <p>And the <code>.table-hover</code> class gives you a gray style when the mouse is hovering.</p>
+                <table class="table table-hover">
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </table>
+                <p>A <code>.table-condensed</code> class cuts the cell padding in half, giving you a more condensed table display.</p>
+                <table class="table table-condensed">
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                    </tr>
+                </table>
+                <p>You can also use the contextual color classes in the <code>&lt;tr&gt;</code> and <code>&lt;td&gt;</code> elements. They are success (green), danger (red), info (blue), warning (yellow), and active (light gray).</p>
+                <p>By using <code>.table-responsive</code> class in the <code>&lt;div&gt;</code> surrounding a <code>&lt;table&gt;</code> element, you get a table that will resize to the device width (under 768px wide).</p>
+                <p>For a complete reference, see the w3schools <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_css_tables.asp">Bootstrap Tables Reference</a>.</p>
+        </div>
+        <div class="container">
+            <p>I'm still not sure how to use the framework, but I'm getting an idea. I will probably stop taking notes now, because it is getting tedious, but I'm continuing the tutorial. NOTE: I will probably use Bootstrap 5 because of it's shift to JS, instead of jQuery. I also will probably just reference it from the web for now, but I would like to download it in the future.</p>
+            <p>I might also use the W3 framework, too, as a basis. But I have to figure out how to style it. It would also be cool to learn how to make my own style library.</p>
+        </div>
+    </body>
+</html>
