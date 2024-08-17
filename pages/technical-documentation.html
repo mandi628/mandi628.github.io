@@ -6,52 +6,62 @@
     <link rel="stylesheet" href="../styles/tech-style.css" />
     <title>Technical Documentation</title>
   </head>
+
   <body>
-    <div class="header">
-    <h1>Technical Documentation</h1>
+    <div id="header">
+        <div id="block"></div>
+        <h1>Technical Documentation</h1>
     </div>
-    <nav id="navbar">
-      <header style="opacity: 0%;">Technical Documentation</header>
-      <ul class="nav-list">
-      <li><a class="nav-link" href="#Section_One">Section One</a></li>
-      <li><a class="nav-link" href="#Section_Two">Section Two</a></li>
-      <li><a class="nav-link" href="#Section_Three">Section Three</a></li>
-      <li><a class="nav-link" href="#Section_Four">Section Four</a></li>
-      <li><a class="nav-link" href="#Section_Five">Section Five</a></li>
-    </nav>
-    <main id="main-doc">
-      <section class="main-section" id="Section_One">
-        <header>Section One</header>
-        <p>This is a paragraph. The paragraphs are supposed to containe code, so here's a code: <code>body {background-color: #fff;}</code></p>
-        <p>And here is another one.</p>
-      </section>
-      <section class="main-section" id="Section_Two">
-        <header>Section Two</header>
-        <p>Paragraphs help us divide text. You can also use <code>div</code> containers to control text.</p>
-        <p>So here is another paragraph.</p>
-        <p>And one more, because I need 10.</p>
-      </section>
-      <section class="main-section" id="Section_Three">
-        <header>Section Three</header>
-        <p>Here is paragraph 6.</p>
-        <p>And paragraph 7 goes like this. JavaScript can be accessed by using the <code>script</code> tag.</p>
-        <ul>
-          <li>This document doesn't make a lot of sense.</li>
-          <li>I don't really know what I should be writing about.</li>
-          <li>I wish I had a clue.</li>
-          <li>But it's kind of fun making stuff up.</li>
-          <li>I'm not sure which is more helpful - HTML or CSS - because both seem necessary.</li>
-      </section>
-      <section class="main-section" id="Section_Four">
-        <header>Section Four</header>
-        <p>Paragraph 8 is nice and simple. Navigation is added by using the <code>nav</code> element.</p>
-      </section>
-      <section class="main-section" id="Section_Five">
-        <header>Section Five</header>
-        <p>Then there's paragraph 9.</p>
-        <p>And finally 10. And unordered or numbered lists are controlled with <code>li</code> elements.</p>
-      </section>
-    </main>
+    <div id="main-body">
+        <div id="nav">
+            <nav id="navbar">
+                <header style="opacity: 0%;">Technical Documentation</header>
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#Section_One">Section One</a></li>
+                    <li><a class="nav-link" href="#Section_Two">Section Two</a></li>
+                    <li><a class="nav-link" href="#Section_Three">Section Three</a></li>
+                    <li><a class="nav-link" href="#Section_Four">Section Four</a></li>
+                    <li><a class="nav-link" href="#Section_Five">Section Five</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="main">
+            <main id="main-doc">
+                <section class="main-section" id="Section_One">
+                    <header>Section One</header>
+                    <p>This is a paragraph. The paragraphs are supposed to contain code, so here's a code: <code>body {background-color: #fff;}</code></p>
+                    <p>And here is another one.</p>
+                </section>
+                <section class="main-section" id="Section_Two">
+                    <header>Section Two</header>
+                    <p>Paragraphs help us divide text. You can also use <code>div</code> containers to control text.</p>
+                    <p>So here is another paragraph.</p>
+                    <p>And one more, because I need 10.</p>
+                </section>
+                <section class="main-section" id="Section_Three">
+                    <header>Section Three</header>
+                    <p>Here is paragraph 6.</p>
+                    <p>And paragraph 7 goes like this. JavaScript can be accessed by using the <code>script</code> tag.</p>
+                    <ul>
+                        <li>This document doesn't make a lot of sense.</li>
+                        <li>I don't really know what I should be writing about.</li>
+                        <li>I wish I had a clue.</li>
+                        <li>But it's kind of fun making stuff up.</li>
+                        <li>I'm not sure which is more helpful - HTML or CSS - because both seem necessary.</li>
+                    </ul>
+                </section>
+                <section class="main-section" id="Section_Four">
+                    <header>Section Four</header>
+                    <p>Paragraph 8 is nice and simple. Navigation is added by using the <code>nav</code> element.</p>
+                </section>
+                <section class="main-section" id="Section_Five">
+                    <header>Section Five</header>
+                    <p>Then there's paragraph 9.</p>
+                    <p>And finally 10. And unordered or numbered lists are controlled with <code>li</code> elements.</p>
+                </section>
+            </main>
+        </div>
+    </div>
   </body>
   <footer>
     <p class="footer">&#169; 2024, Zhiva Codes</p>
