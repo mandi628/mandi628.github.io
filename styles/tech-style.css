@@ -22,7 +22,7 @@ Headings font: Georgia, serif; */
 #header {
     position: sticky;
     top: 0;
-    height: 102px;
+    height: 107px;
     width: 100%;
     margin: 0;
     background-color: var(--cambridge-blue);
@@ -40,7 +40,7 @@ div#block {
   
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     background-color: var(--cambridge-blue);
     padding-left: 20px;
     padding-top: 20px;
@@ -48,6 +48,7 @@ h1 {
 
 h2 {
     font-size: 1.3rem;
+    color: var(--lime);
     background-color: var(--cambridge-blue);
     padding-bottom: 10px;
     padding-left: 60px;
@@ -82,7 +83,7 @@ h2 {
 }
 
 #navbar a:hover {
-    background-color: var(--russian-violet);
+    background-color: var(--cornell-red);
     color: var(--lime);
 }
 
@@ -96,7 +97,8 @@ main {
 .main-section header {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.2rem;
+    border-bottom: 4px double var(--cornell-red);
     padding: 20px 0 10px 0;
 }
 
