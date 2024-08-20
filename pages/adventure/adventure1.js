@@ -13,3 +13,11 @@ function look() {
     button2.innerText = "RIGHT";
     button2.onclick = right;
 }
+
+function right() {
+    text.innerHTML = "You see a starfish and a crab on the sand.<br><br>You're hungry! Which one do you eat?";
+    button1.innerText = "STARFISH";
+    button1.onclick = starfish;
+    button2.innerText = "CRAB";
+    button2.onclick = crab;
+}
