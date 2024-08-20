@@ -99,7 +99,7 @@ function hunt() {
     die();
 }
 
-function = caveLeft() {
+function caveLeft() {
     text.innerText = "Oh no! A bear has already chosen this cave, and he's attacking!<br><br>You do not survive.";
     die();
 }
