@@ -59,12 +59,12 @@ function tree() {
 }
 
 function coconutYes() {
-    text.innerText = "Oh boy. Coconut water and raw crab do not mix.<br><br>You do not survive.";
+    text.innerHTML = "Oh boy. Coconut water and raw crab do not mix.<br><br>You do not survive.";
     die();
 }
 
 function coconutNo() {
-    text.innerText = "Good choice...<br>The sun is setting and you see two caves.<br><br>Do you choose the cave on the left, or the cave on the right?";
+    text.innerHTML = "Good choice...<br>The sun is setting and you see two caves.<br><br>Do you choose the cave on the left, or the cave on the right?";
     button1.innerText = "LEFT";
     button2.innerText = "RIGHT";
     button1.onclick = caveLeft;
@@ -72,7 +72,7 @@ function coconutNo() {
 }
 
 function caveRight() {
-    text.innerText = "This cave is roomy and dry. You will sleep well tonight.";
+    text.innerHTML = "This cave is roomy and dry. You will sleep well tonight.";
     button1.innerText = "SLEEP";
     button2.innerText = "AWAKE";
     button1.onclick = sleep;
@@ -82,7 +82,7 @@ function caveRight() {
 /* TODO: Make an alternate path for AWAKE... */
 
 function sleep() {
-    text.innerText = "It is now morning, and you are rested, but hungry again.<br><br>Do you go back for a coconut, or hunt for something else?";
+    text.innerHTML = "It is now morning, and you are rested, but hungry again.<br><br>Do you go back for a coconut, or hunt for something else?";
     button1.innerText = "COCONUT";
     button2.innerText = "HUNT";
     button1.onclick = coconutRotten;
@@ -90,17 +90,17 @@ function sleep() {
 }
 
 function coconutRotten() {
-    text.innerText = "Darn! That coconut was rotten after all! Looks like coconuts are a bad choice on this island.<br><br>You do not survive.";
+    text.innerHTML = "Darn! That coconut was rotten after all! Looks like coconuts are a bad choice on this island.<br><br>You do not survive.";
     die();
 }
 
 function hunt() {
-    text.innerText = "Great job! You found food!<br><br>And just in time! A rescue plane has just flown over the island and spotted you!<br><br>YOU WIN!";
+    text.innerHTML = "Great job! You found food!<br><br>And just in time! A rescue plane has just flown over the island and spotted you!<br><br>YOU WIN!";
     die();
 }
 
 function caveLeft() {
-    text.innerText = "Oh no! A bear has already chosen this cave, and he's attacking!<br><br>You do not survive.";
+    text.innerHTML = "Oh no! A bear has already chosen this cave, and he's attacking!<br><br>You do not survive.";
     die();
 }
 
@@ -123,5 +123,5 @@ function restart() {
 }
 
 function end() {
-    window.open("./adv-index.html");
+    window.open("./adv-index.html", "_self");
 }
