@@ -30,12 +30,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Color scheme references
     - [Image](https://mandi628.github.io/zhiva-palette-01.png)
     - [CSS](https://mandi628.github.io/zhiva-palette-01.scss)
+- Add link reference for W3.CSS Framework
 
 ### Changed
 
 - Created my own text for Technical Documentation sample
 - Added color scheme as template for all pages.
 - Reorganized files for easier linking and reference
+- Temporarily parked working pages in my_sandbox repo
 
 ### Removed
 
