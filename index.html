@@ -5,131 +5,223 @@
   <title>mandi628 - Portfolio</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link rel="stylesheet" href="./zhivastyles.css" />
+  <!-- <link rel="stylesheet" href="./zhivastyles.css" /> -->
+  <link rel="stylesheet" href="./628theme.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/6823dcc53a.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-  <nav id="navbar">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+<body class="mc-light">
+  <nav id="navbar" style="position: sticky; top: 0; z-index: 1;" class="w3-container mc-accent w3-bar w3-xlarge w3-center kode-mono-628">
+    <a href="#" class="w3-bar-item w3-button a-accent" style="width:25%">Home</a>
+    <a href="#about" class="a-accent w3-bar-item w3-button" style="width:25%;">About</a>
+    <a href="#projects" class="a-accent w3-bar-item w3-button" style="width:25%;">Projects</a>
+    <a href="#contact" class="a-accent w3-bar-item w3-button" style="width:25%;">Contact</a>
   </nav>
 
   <section id="welcome-section">
-    <div>
-      <h1 id="welcome">Zhiva Codes</h1>
-      <p id="subtitle">mandi628<br>Re-invented as a web developer</p>
+    <div class="mc-dark w3-container" style="height: 100vh;">
+      <div class="w3-container w3-display-middle w3-center">
+        <h1 id="welcome" class="h1-dk w3-jumbo kode-mono-628" style="color: var(--lime) !important;">mandi628</h1>
+        <h3 id="subtitle" class="h3-ac" style="color: var(--smoke) !important; text-decoration: underline 2px var(--cor-red);">Re-invented as a web developer</h3>
+      </div>
     </div>
   </section>
 
-  <section id="projects">
-    <h1 class="header">Projects</h1>
-<!-- Landing Page Project -->
-    <div id="project-catalog">
-      <div class="project-tile">
-        <div class="project-card">
-          <a href="pages/fcc-landing-page.html">
-            <img class="thumbnail" 
-              src="./images/landing-page-976x642.png"
-              alt="Landing Page" />
-          </a>
+  <!-- Feature Websites -->
+  <section id="projects" style="padding-top: 50px; padding-bottom: 50px;">
+    <h1 class="h1-lt w3-center kode-mono-628 w3-xxxlarge">Feature Websites</h1>
+    <div class="w3-content w3-section" style="max-width:650px">
+      <div class="w3-display-container mySlides">
+        <img src="./images/holder-auminteriors.jpg" style="width:100%">
+        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 mc-dark">
+          Aumann Interiors
         </div>
-        <a href="./pages/fcc-landing-page.html">Product Landing Page</a>
       </div>
-<!-- Technical Documentation Page Project -->
-      <div class="project-tile">
-        <div class="project-card">
-          <a href="./pages/technical-documentation.html">
-            <img class="thumbnail"
-              src="./images/tech-doc-1366x768.png"
-              alt="Technical Documentation"
-              height="150px"
-              width="150px" />
-          </a>
+      <div class="w3-display-container mySlides">
+        <img src="./images/holder-usa.jpg" style="width:100%">
+        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 mc-dark">
+          Upstate Suzuki Academy
         </div>
+      </div>
+      <div class="w3-display-container mySlides">
+        <img src="./images/holder-recipes.jpg" style="width:100%">
+        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 mc-dark">
+          Family Recipes
+        </div>
+      </div>
+      <div class="w3-display-container mySlides">
+        <img src="./images/holder-catlady.jpg" style="width:100%">
+        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 mc-dark">
+          Cat Lady Music
+        </div>
+      </div>
+    </div>
+    
+    <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+  </section>
+
+  <!-- Webpages Section -->
+  <section class="mc-accent" style="padding-top: 50px; padding-bottom: 50px;">
+    <h1 class="h1-ac kode-mono-628 w3-xxxlarge w3-center">Webpages</h1>
+
+    <!-- Row One -->
+    <div id="project-catalog" class="w3-container w3-row-padding w3-padding-16">
+
+    <!-- Landing Page Project -->
+        <div class="w3-quarter">
+          <div class="w3-card w3-center mc-light" style="height: 200px;">
+            <header class="w3-container mc-dark">Landing Page</header>
+            <div class="w3-container mc-light"><a href="pages/fcc-landing-page.html">
+              <img class="thumbnail" 
+                src="./images/landing-page-976x642.png"
+                alt="Landing Page" height="150px" width="auto"/>
+              </a>
+            </div>
+            <a href="./pages/fcc-landing-page.html">Product Landing Page</a>
+          </div>
+        </div>
+
+      <!-- Technical Documentation Page Project -->
+        <div class="w3-quarter">
+          <div class="w3-card w3-center mc-light" style="height: 200px;">
+            <header class="w3-container mc-dark">Technical Documentation</header>
+            <div class="w3-container mc-light"><a href="./pages/technical-documentation.html">
+              <img class="thumbnail"
+                src="./images/tech-doc-1366x768.png"
+                alt="Technical Documentation"
+                height="150px"
+                width="auto" />
+            </a>"
+            </div>
         <a href="/pages/technical-documentation.html">Technical Documentation</a>
-      </div>
-<!-- Tribute Page Project -->
-      <div class="project-tile">
-        <div class="project-card">
-        <img alt="Tribute Page" height="150px" width="150px" />
+          </div>
         </div>
+
+      <!-- Tribute Page Project -->
+      <div class="w3-quarter">
+          <div class="w3-card w3-center mc-light" style="height: 200px;">
+          <header class="w3-container mc-dark">Tribute Page</header>
+          <div class="w3-container mc-light"><img alt="Tribute Page" height="150px" width="auto" />
+          </div>
         <a href="/pages/tribute-page.html">Tribute Page</a>
-      </div>
-<!-- Landing Page #2 (Odin Project) -->
-      <div class="project-tile">
-        <div class="project-card">
-          <img alt="Landing Page #2" height="150px" width="150px" />
           </div>
-          <a href="/pages/tribute-page.html">Product Landing Page #2</a>
       </div>
-<!-- Python Numerology Calculator -->
-      <div class="project-tile">
-        <div class="project-card">
-          <img alt="Numerology Calculator" height="150px" width="150px" />
+
+      <!-- Landing Page #2 (Odin Project) -->
+      <div class="w3-quarter">
+        <div class="w3-card w3-center mc-light" style="height: 200px;">
+          <header class="w3-container mc-dark">Landing Page #2</header>
+          <div class="w3-container mc-light"><img alt="Landing Page #2" height="150px" width="auto" />
+          </div>
+          <a href="/pages/tribute-page.html">Product Landing Page #2</a>"
         </div>
-          <a href="">Python Numerology Calculator</a>
       </div>
-<!-- Survey Form -->
-      <div class="project-tile">
-        <div class="project-card">
-          <img alt="Survey Form" height="150px" width="150px" />
+    </div>
+
+    <!-- Row Two -->
+    <div class="w3-row-padding w3-container w3-padding-16">
+
+      <!-- Survey Form -->
+      <div class="w3-quarter">
+        <div class="w3-card w3-center mc-light" style="height: 200px;">
+          <header class="w3-container mc-dark">Survey Form</header>
+          <div class="w3-container mc-light"><img alt="Survey Form" height="150px" width="auto" />
           </div>
-          <a href="">Survey Form</a>
+        </div>
       </div>
-<!-- Balance Sheet -->
-      <div class="project-tile">
-        <div class="project-card">
-          <img alt="Balance Sheet" height="150px" width="150px" />
+
+      <!-- Balance Sheet -->
+      <div class="w3-quarter">
+        <div class="w3-card w3-center mc-light" style="height: 200px;">
+          <header class="w3-container mc-dark">Balance Sheet</header>
+          <div class="w3-container mc-light"><img alt="Balance Sheet" height="150pc" width="auto" />
           </div>
-          <a href="">Balance Sheet</a>
+        </div>
       </div>
-<!-- Family Recipes Website -->
-      <div class="project-tile">
-        <div class="project-card">
-          <img alt="Family Recipes" height="150px" width="150px" />
-          </div>
-          <a href="">Family Recipes Website</a>
+
+    </div>
+  </section>
+  
+  <!-- Other Projects Section -->
+  <section class="mc-light" style="padding-top: 50px; padding-bottom: 50px;">
+    <h1 class="h1-lt kode-mono-628 w3-xxxlarge w3-center">Other Projects</h1>
+
+    <!-- Row One -->
+     <div id="other-projects" class="w3-container w3-row-padding w3-padding-16">
+
+      <!-- Python Numerology Calculator -->
+      <div class="w3-third">
+        <div class="w3-card w3-center mc-dark" style="height: 250px;">
+          <div class="w3-container mc-dark"><img alt="Numerology Calculator" height="150px" width="auto" /></div>
+          <footer class="w3-container mc-light"><a href="#">Python Numerology Calculator</a></footer>
+        </div>
       </div>
+     </div>
+
+
     </div>
   </section>
 
-  <section id="about">
-    <h1 class="header">About</h1>
-    <div class="text">
+  <!-- About Section -->
+  <section id="about" style="padding-top: 50px; padding-bottom: 50px;">
+    <h1 class="h1-lt w3-jumbo kode-mono-628 w3-center">About</h1>
+    <div class="w3-container" style="width: 70%; margin: auto;">
       <p>
         After years as a stay-at-home mom, raising four kids, Mandi went to work as a freelance musician and teacher. Always passionate and curious about computers, when her youngest graduated from high school, Mandi set about learning the craft of web and software development.
       </p>
       <p>
         She is now a freelance web developer and programmer, and enjoys the freedom of location this type of work offers. In her spare time, Mandi continues to teach private music lessons, performs in various venues in the Southeast, and spins her own wool for knitting, crocheting, felting, weaving, and more. <a href="./README.md">&#128211;</a>
       </p>
-      <p id="last">Click any of the links below to find out more or contact Mandi! Let's work together soon!</p>
+      <p>Click any of the links below to find out more or contact Mandi! Let's work together soon!</p>
     </div>
   </section>
 
-  <section>
-    <h2>Training Progress</h2>
-    <div id="certificates">
-      <div class="fcc"><img src="FCC-RWD-cert.png" alt="freeCodeCamp Responsive Web Design Certificate" width="200px"/></div>
-      <div><a href="https://roadmap.sh"><img src="https://roadmap.sh/card/tall/668c37202c7edd3e44820e17?variant=dark&roadmaps=devops%2Cfrontend%2Cbackend%2Cpython" alt="roadmap.sh" width="200px"/></a></div>
+  <section class="w3-container" style="padding-top: 50px; padding-bottom: 50px;">
+    <h2 class="h2-lt kode-mono-628 w3-center">Training Progress</h2>
+    <div id="certificates" class="w3-row-padding">
+      <div class="w3-half w3-center"><img src="./images/FCC-RWD-cert.png" alt="freeCodeCamp Responsive Web Design Certificate" height="250px" width="auto"/></div>
+      <div class="w3-half w3-center"><a href="https://roadmap.sh"><img src="https://roadmap.sh/card/tall/668c37202c7edd3e44820e17?variant=dark&roadmaps=devops%2Cfrontend%2Cbackend%2Cpython" alt="roadmap.sh" width="200px"/></a></div>
+    </div>
   </section>
 
-  <section id="contact">
-    <ul id="profiles">
-      <li><a href="https://www.freecodecamp.org/mandi628" id="profile-link" target="_blank">
-        <i class="fa-brands fa-free-code-camp"></i> freeCodeCamp</a></li>
-      <li><a href="https://www.github.com/mandi628" target="_blank">
-        <i class="fa-brands fa-github"></i> GitHub</a></li>
-      <li><a href="mailto:mandi628.codes@gmail.com">
-        <i class="fa-regular fa-envelope"></i> E-mail</a></li>
-    </ul>
-  <section>
+  <!-- Contact Section -->
+  <section id="contact" class="w3-container mc-dark" style="padding-top: 50px; padding-bottom: 50px;">
+    <div class="w3-cell-row">
+      <div class="w3-cell w3-third w3-button mc-dark a-dark"><a href="https://www.freecodecamp.org/mandi628" id="profile-link" target="_blank" style="text-decoration: none;">
+        <span class="w3-badge"><i class="fa-brands fa-free-code-camp"></i></span> freeCodeCamp</a>
+      </div>
+      <div class="w3-cell w3-third w3-button mc-dark a-dark"><a href="https://www.github.com/mandi628" target="_blank">
+        <span class="w3-badge"><i class="fa-brands fa-github"></i></span> GitHub</a>
+      </div>
+      <div class="w3-cell w3-third w3-button mc-dark a-dark"><a href="mailto:mandi628.codes@gmail.com">
+        <span class="w3-badge"><i class="fa-regular fa-envelope"></i></span> E-mail</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="w3-container w3-center mc-dark">
+    <p>&#169; 2024, Zhiva Codes</p>
+  </footer>
+  
   <script src="https://www.w3schools.com/lib/w3.js"></script>
+
 </body>
-<footer>
-  <p class="footer">&#169; 2024, Zhiva Codes</p>
-</footer>
 </html>
