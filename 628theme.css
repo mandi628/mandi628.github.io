@@ -18,9 +18,9 @@
 /* Links */
 .a-light {color: #69a197ff !important; font-weight: bold !important;}
 .a-accent, .a-dark {color: #cbff4dff !important; font-weight: bold !important; text-decoration: none !important;}
-.a-light-hover:hover {background-color: #241e4eff !important; color: #cbff4dff !important;}
-.a-accent-hover:hover {background-color: #bf211eff !important; color: #cbff4dff !important;}
-.a-dark-hover:hover {background-color: #cbff4dff !important; color: #bf211eff !important;}
+.a-light:hover {background-color: #241e4eff !important; color: #cbff4dff !important;}
+.a-accent:hover {background-color: #bf211eff !important; color: #cbff4dff !important;}
+.a-dark:hover {background-color: #cbff4dff !important; color: #bf211eff !important;}
 
 /* Buttons */
 .button-dark {background-color: #bf211eff !important; color: #cbff4dff !important; border: 1px solid #595959ff !important;}
@@ -28,12 +28,15 @@
 
 /* Light Theme */
 .mc-light {background-color: #f1edeeff !important; color: #595959ff !important;}
-.h1-lt, .h2-lt, .h3-lt, .h4-lt, .h5-lt, .h6-lt {color: #241e4eff !important; font-family: “Kode Mono”, monospace !important; font-weight: bold !important;}
+.h1-lt, .h2-lt, .h3-lt, .h4-lt, .h5-lt, .h6-lt {color: #241e4eff !important; font-weight: bold !important;}
 
 /* Accent Theme */
 .mc-accent {background-color: #69a197ff !important; color: #f1edeeff !important;}
-.h1-ac, .h2-ac, .h3-ac, .h4-ac, .h5-ac, .h6-ac {color: #241e4eff !important; font-family: “Kode Mono”, monospace !important; font-weight: bold !important;}
+.h1-ac, .h2-ac, .h3-ac, .h4-ac, .h5-ac, .h6-ac {color: #241e4eff !important; font-weight: bold !important;}
 
 /* Dark Theme */
 .mc-dark {background-color: #241e4eff !important; color: #f1edeeff !important;}
-.h1-dk, .h2-dk, .h3-dk, .h4-dk, .h5-dk, .h6-dk {color: #69a197ff !important; font-family: “Kode Mono”, monospace !important; font-weight: bold !important;}
+.h1-dk, .h2-dk, .h3-dk, .h4-dk, .h5-dk, .h6-dk {color: #69a197ff !important; font-weight: bold !important;}
+
+/* Other Classes */
+.mySlides{display:none;}
