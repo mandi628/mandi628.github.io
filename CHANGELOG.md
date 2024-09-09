@@ -16,12 +16,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - create original style template for my personal pages
 - create text and update index.html
 - decide how fcc-index fits into framework of page
+- update webpage examples for W3.CSS framework styling
 
 ### Removed
 
 - Remove wiki
 
-## [1.2.0] - In Progress
+## [1.3.0] - In progress
+
+### Added
+
+- Added slideshow for feature website; currently holding placeholders until sites are launched
+
+### Changed
+
+- Made top menu bar sticky
+- Reformatted all divs for W3.CSS framework styling
+
+## [1.2.0] - 2024-09-09
 
 ### Added
 
