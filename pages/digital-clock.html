@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+        <link rel="stylesheet" href="../628theme.css" />
+        <meta charset="utf-8" />
+        <title>JavaScript Digital Clock</title>
+        <style>
+            body {
+                height: 100vh;
+                font-family: Arial, sans-serif;
+                font-size: 4em;
+                background-color: var(--cam-blue);
+            }
+            #clock {
+                font-weight: bold;
+                color: var(--cor-red);
+                background-color: var(--lime);
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="navbar" style="position: sticky; top: 0; z-index: 1;" class="w3-container mc-accent w3-bar w3-xlarge w3-center kode-mono-628">
+            <a href="../index.html" class="w3-bar-item w3-button a-accent" style="width:25%">Home</a>
+            <a href="../index.html#about" class="a-accent w3-bar-item w3-button" style="width:25%;">About</a>
+            <a href="../index.html#projects" class="a-accent w3-bar-item w3-button" style="width:25%;">Projects</a>
+            <a href="../index.html#contact" class="a-accent w3-bar-item w3-button" style="width:25%;">Contact</a>
+        </nav>
+        <div class="w3-display-container" style="height: 93vh; width: 100vw;">
+        <div class="w3-container w3-center w3-display-topmiddle">
+            <h1 class="h1-ac">The current time is:</h1>
+        </div>
+        <div id="clock" class="w3-container w3-display-middle">00:00:00</div>
+        <div class="w3-container w3-center w3-display-bottommiddle w3-medium">
+            <p>Styling powered by <a href="https://www.w3schools.com/w3css/default.asp">W3.CSS</a> framework. Project completed with <a href="https://chatgpt.com">ChapGPT</a> assistance. Created by <a href="mailto:mandi628.codes@gmail.com" target="_blank">mandi628</a></p>
+        </div>
+        </div>
+        <script src="../scripts/digital-clock.js"></script>
+    </body>
+    <footer>
+    </footer>
+</html>
