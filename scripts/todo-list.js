@@ -15,14 +15,29 @@ function saveTasksToLocalStorage(tasks) {
 // (Optional) Function to load tasks from local storage
 function loadTasksFromLocalStorage() {
     const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
-    tasks.forEach(task => addTaskToDOM(task));
+    tasks.forEach(task => addTaskToDOM(task.text, task.completed));
 }
 
 // (Optional) Function to add a new task to the DOM
-function addTaskToDOM(taskText) {
+function addTaskToDOM(taskText, isCompleted = false) {
     // Create a new list item (li) element
     const taskItem = document.createElement('li');
+    // taskItem.textContent = taskText;
+
+    // Create a checkbox for marking task as complete
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.checked = isCompleted;
+    checkbox.addEventListener('change', () => toggleTaskCompletion(taskText, checkbox.checked));
+
+    // Apply 'completed' style if task is marked as complete
+    if (isCompleted) {
+        taskItem.classList.add('completed');
+    }
+
+    // Update task item content
     taskItem.textContent = taskText;
+    taskItem.prepend(checkbox); // Add the checkbox before the text
 
     //Create a delete button for the task
     const deleteButton = document.createElement('button');
@@ -55,7 +70,7 @@ function addTask() {
 
     // Save task to local storage
     const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
-    tasks.push(taskText);
+    tasks.push({ text: taskText, completed: false });
     saveTasksToLocalStorage(tasks);
 
     // // Create a new list item (li) element
@@ -79,10 +94,27 @@ function addTask() {
     inputElement.value = '';
 }
 
+// Function to toggle task completion in local storage
+function toggleTaskCompletion(taskText, isCompleted) {
+    let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+    tasks = tasks.map(task =>
+        task.text === taskText ? { ...task, completed: isCompleted } : task
+    );
+    saveTasksToLocalStorage(tasks);
+
+    // Update task item style
+    const listItem = Array.from(todoList.children).find(
+        item => item.textContent.includes(taskText)
+    );
+    if (listItem) {
+        listItem.classList.toggle('completed', isCompleted);
+    }
+}
+
 // Function to remove a task from local storage
 function removeTaskFromLocalStorage(taskText) {
     let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
-    tasks = tasks.filter(task => task !== taskText); // Remove the task freom the array
+    tasks = tasks.filter(task => task.text !== taskText); // Remove the task freom the array
     saveTasksToLocalStorage(tasks);
 }
 
@@ -91,3 +123,4 @@ addButton.addEventListener('click', addTask);
 
 // Load tasks from local storage when the page loads
 window.addEventListener('load', loadTasksFromLocalStorage);
+
