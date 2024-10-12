@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+        <link rel="stylesheet" herf="../628theme.css" />
+        <meta charset="utf-8" />
+        <title>JavaScript To-Do List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            body {font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;}
+            ul {list-style: none; padding: 0;}
+            li {margin: 5px 0; display: flex; align-items: center; gap: 10px;}
+            button {cursor: pointer;}
+        </style>
+    </head>
+    <body>
+        <h1>To-Do List</h1>
+        <input type="text" id="todo-input" placeholder="Enter a new task">
+        <button id="add-button">Add Task</button>
+        <ul id="todo-list"></ul>
+        <script src="../scripts/todo-list.js"></script>
+    </body>
+</html>
