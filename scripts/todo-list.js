@@ -124,3 +124,17 @@ addButton.addEventListener('click', addTask);
 // Load tasks from local storage when the page loads
 window.addEventListener('load', loadTasksFromLocalStorage);
 
+// Ge reference to the Clear All button
+const clearButton = document.getElementById('clear-button');
+
+// Function to clear all tasks
+function clearAllTasks() {
+    // Remove all tasks from the DOM
+    todoList.innerHTML = '';
+
+    // Clear tasks from local storage
+    localStorage.removeItem('tasks');
+}
+
+// Add event listener to the Clear All button
+clearButton.addEventListener('click', clearAllTasks);
